@@ -19,6 +19,7 @@ router.post("/signup",async (req,res)=>{
     const firstName = req.body.firstName;
     const lastName = req.body.lastName;
     const success = signupBody.safeParse(req.body)
+    // console.log(`inside signup route with ${username} + ${password} + ${firstName} + ${lastName} `)
     if(!(success.success)){
         return res.status(411).json({
             "message" : "Invalid Inputs"

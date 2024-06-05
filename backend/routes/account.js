@@ -5,7 +5,7 @@ const authMiddleware = require("../middlewares/middleware")
 const mongoose = require("mongoose")
 
 
-router.get("/balance",authMiddleware,async (req,res)=>{
+router.get("/balance",async (req,res)=>{
     console.log("inside balance function")
     const userId = req.userId
     const balance = await Accounts.findOne({
