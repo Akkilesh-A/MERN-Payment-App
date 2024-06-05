@@ -11,7 +11,7 @@ const SignUp = () => {
 
   return (
     <div className='flex flex-col h-[100vh] items-center justify-center'>
-        <div className='bg-gray-100 sm:px-16 p-8 flex flex-col border rounded-md shadow'>   
+        <div className='bg-white sm:px-16 p-8 flex flex-col border rounded-md shadow'>   
             <Heading text={"Sign Up"} />
             <p className='text-gray-500 font-[1.5rem] mb-4'>Enter your credentials to create a new account</p>
             <label className='mt-2 mb-2 text-[1.5rem] font-semibold'>Username</label>
